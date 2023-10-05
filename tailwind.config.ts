@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        'custom-blue': '#060d17',
+        'custom-purple': '#413b5f;',
+        'custom-second-purple': '#696286;',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

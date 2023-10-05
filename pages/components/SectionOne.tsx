@@ -26,8 +26,8 @@ export function SingleMovieSection() {
         <h4 className="pr-5 pb-5 font-bold text-left uppercase text-xl">
                 Most New
             </h4>
-        <div className="rounded-lg p-5 bg-slate-900 w-[850px] flex flex-col justify-center items-center">
-            <img src="{MovieData.Poster}" alt="{MovieData.Title}" className='mt-10 rounded-xl' />
+        <div className="rounded-lg p-5 bg-custom-blue w-[850px] flex flex-col justify-center items-center">
+            <img src="{movieData.Poster}" alt="{movieData.Title}" className='mt-10 rounded-xl' />
         <h5
         className="mb-2 text-xl font-bold leading-tight text-center py-5">
         Title of the Movie
