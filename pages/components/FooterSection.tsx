@@ -2,8 +2,8 @@ import React from 'react'
 
 export function Footer() {
     return (
-        <footer className="bg-custom-blue rounded-lg m-4 w-auto">
-            <div className="w-full max-w-screen-x1 mx-auto p-4 md:py-8 ">
+        <footer className="bg-custom-blue rounded-lg w-full">
+            <div className="max-w-screen-x1 mx-auto p-4 md:py-8 ">
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://github.com/RodriDev23/rating-movie" className="flex items-center mb-4 sm:mb-0" target="_blank">
                 <img src="https://placehold.co/64x64" alt="Movie Icon" />
