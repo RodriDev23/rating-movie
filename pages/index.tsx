@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import { FirstSection } from "./components/FirstSection"
 import { SectionsBottom } from "./components/SectionBottom";
 import { SingleMovieSection } from "./components/SectionOne";
+import { Footer } from "./components/FooterSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
   <FirstSection />
   <SingleMovieSection />
   <SectionsBottom titlePrincipal='hello world' />
+  <Footer />
   </div>
     )
 }
