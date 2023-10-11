@@ -1,4 +1,5 @@
 import React from 'react';
+import image from '../../public/Thor.png'
 
 export function FirstSection() {
     return (
@@ -15,8 +16,8 @@ export function FirstSection() {
                     Start Exploring
                 </button>
             </div>
-            <div className="md:w-1/2">
-                <img className="w-full md:max-h-96 object-cover" src="https://placehold.co/400x800" alt="Movie Poster"/>
+            <div className="">
+                <img src={image} className="object-cover" alt="Movie Poster"/>
             </div>
         </section>
     );
