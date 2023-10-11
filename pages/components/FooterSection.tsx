@@ -4,7 +4,7 @@ import React from 'react'
 
 export function Footer() {
     return (
-        <footer className="bg-custom-blue rounded-lg w-full">
+        <footer className="bg-custom-blue rounded-lg w-4/6 mb-5">
             <div className="max-w-screen-x1 mx-auto p-4 md:py-8 ">
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://github.com/RodriDev23/rating-movie" className="flex items-center mb-4 sm:mb-0" target="_blank">
