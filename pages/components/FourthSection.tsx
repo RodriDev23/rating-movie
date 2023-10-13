@@ -1,9 +1,25 @@
-import react from 'react'
+import React from 'react'
+import { useFetch } from './useFetch';
 
 export function FourthSection() {
+    const { data, loading } = useFetch({query : 'the-batman'});
+
+    if (loading) {
+        return <div className="text-lime-500 font-bold">Loading...</div>; // You can add a loading indicator if needed
+    }
+    
+    if (!data) {
+        return <div className="text-red-600 font-bold">Error fetching data.</div>; // Handle error state if the request fails
+    }
+    
+    const {
+        Title,
+        Poster,
+    } = data;
+
     return (
         <section className="flex items-center justify-center text-center p-10 w-full  h-50"> 
-        {/* EN W-FULL, UN w-5/6 QUEDA BIEN TAMBIEN. DEJALO COMO MAS TE GUSTE. */}
+        {/*w-5/6*/}
             <div className="flex items-center justify-center bg-custom-blue rounded-lg">
                 <div className="flex justify-center items-center flex-col">
                 <h2 className="font-bold text-xl uppercase p-4">Become a trully Nerd</h2>
@@ -11,8 +27,8 @@ export function FourthSection() {
                 <a href="" className="font-bold bg-black rounded-lg p-5 w-1/1 uppercase text-center mt-6 mb-6 hover:bg-custom-purple transition duration-500 ease-in-out">Upgrade to Plus+</a>
                 </div>
 
-                <div className="w-1/1 flex justify-center items-center gap-3">
-                    <img src="https://placehold.co/400x400" alt=""/>
+                <div className="w-1/3 flex justify-center items-center">
+                    <img src={Poster} alt={Title} />
                 </div>
 
             </div>

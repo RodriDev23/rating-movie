@@ -1,10 +1,25 @@
 import React from 'react';
-import image from '../../public/Thor.png'
+import { useFetch } from './useFetch';
 
 export function FirstSection() {
+    const { data, loading } = useFetch({query : 'wonka'});
+
+    if (loading) {
+        return <div className="text-lime-500 font-bold">Loading...</div>; // You can add a loading indicator if needed
+    }
+    
+    if (!data) {
+        return <div className="text-red-600 font-bold">Error fetching data.</div>; // Handle error state if the request fails
+    }
+    
+    const {
+        Title,
+        Poster,
+    } = data;
+
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center bg-custom-blue p-20 rounded-lg mt-10">
-            <div className="md:w-1/2 p-8">
+        <section className="flex flex-col md:flex-row items-center justify-center bg-custom-blue p-5 rounded-lg mt-10 w-2/3">
+            <div className="md:w-1/2 p-4">
                 <h1 className="text-3xl md:text-3xl text-white font-bold mb-4">
                     Check the most new movies and get ready to have an unique experience
                 </h1>
@@ -17,7 +32,7 @@ export function FirstSection() {
                 </button>
             </div>
             <div className="">
-                <img src={image} className="object-cover" alt="Movie Poster"/>
+                <img src={Poster} className="object-cover" alt={Title}/>
             </div>
         </section>
     );

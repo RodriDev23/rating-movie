@@ -5,11 +5,11 @@ export function SingleMovieSection() {
   const { data, loading } = useFetch({query : 'taxi-driver'}); // Pass the movie title or query here
 
   if (loading) {
-    return <div>Loading...</div>; // You can add a loading indicator if needed
+    return <div className="text-lime-500 font-bold">Loading...</div>; // You can add a loading indicator if needed
   }
 
   if (!data) {
-    return <div>Error fetching data.</div>; // Handle error state if the request fails
+    return <div className="text-red-600 font-bold">Error fetching data.</div>; // Handle error state if the request fails
   }
 
   const {
