@@ -2,8 +2,8 @@ import React from 'react';
 import { Section } from './Section';
 interface titleSection {
   titlePrincipal : String
- }
- export const SectionsBottom : React.FC<titleSection> = ({titlePrincipal}) => {
+}
+export const SectionsBottom : React.FC<titleSection> = ({titlePrincipal}) => {
 
   return (
     <section className="p-5 flex flex-col justify-center rounded-md w-[80%]">

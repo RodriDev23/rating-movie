@@ -7,7 +7,7 @@ interface titlePrincipal {
 
 export const Section : React.FC<titlePrincipal> = ({tittle}) => {
   // Use the useFetch hook to fetch movie data for a specific query
-  const { data, loading } = useFetch({query: 'spider-man'}); // Pass the query string here
+  const { data, loading } = useFetch({query: 'no-way-home'}); // Pass the query string here
 
   if (loading) {
     return <div className="text-lime-500 font-bold">Loading...</div>; // Add a loading indicator if needed
