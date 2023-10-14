@@ -23,11 +23,8 @@ export function FirstSection() {
                 <h1 className="text-3xl md:text-3xl text-white font-bold mb-4">
                     Check the most new movies and get ready to have an unique experience
                 </h1>
-                {/* <p className="text-lg text-gray-400 mb-6">
-                    
-                </p> */}
                 <button className="bg-blue-500 hover:bg-blue-800 hover:text-gray-400 transition duration-500 ease-in-out text-white font-bold py-2 px-4 rounded" 
-                id="#mostnew">
+                id="">
                     Start Exploring
                 </button>
             </div>
