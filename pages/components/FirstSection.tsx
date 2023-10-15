@@ -18,19 +18,20 @@ export function FirstSection() {
     } = data;
 
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center bg-custom-blue p-5 rounded-lg mt-10 w-2/3">
-            <div className="md:w-1/2 p-4">
+        <section className="flex flex-col md:flex-col md:justify-center md:items-center md:gap-10 items-center justify-center bg-custom-blue p-5 rounded-lg mt-10 w-2/3">
+            <div className="md:w-1/2 p-4 md:flex md:flex-col md:justify-center md:items-center md:gap-10">
                 <h1 className="text-3xl md:text-3xl text-white font-bold mb-4">
                     Check the most new movies and get ready to have an unique experience
                 </h1>
-                <button className="bg-blue-500 hover:bg-blue-800 hover:text-gray-400 transition duration-500 ease-in-out text-white font-bold py-2 px-4 rounded" 
+       </div>
+            <div className="">
+                <img src={Poster} className="object-cover rounded-md" alt={Title}/>
+            </div>
+        <button className="md:flex  md:justify-center md:items-center bg-blue-500 hover:bg-blue-800 hover:text-gray-400 transition duration-500 ease-in-out text-white font-bold py-5 px-10 rounded" 
                 id="">
                     Start Exploring
-                </button>
-            </div>
-            <div className="">
-                <img src={Poster} className="object-cover" alt={Title}/>
-            </div>
+         </button>
+     
         </section>
     );
 }

@@ -25,7 +25,7 @@ export const Section : React.FC<titlePrincipal> = ({tittle}) => {
   } = data;
 
   return (
-    <section className=" bg-slate-900 p-2 flex flex-col justify-center items-center md:max-w-2xl gap-2 rounded-lg">
+    <section className=" bg-slate-900 p-2 flex flex-col justify-center items-center md:max-w-2xl gap-2 rounded-lg hover:cursor-pointer">
       <h4 className="pr-2 pb-4 font-bold text-left uppercase text-xl">
         {tittle}
       </h4>

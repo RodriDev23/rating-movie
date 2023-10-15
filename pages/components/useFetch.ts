@@ -28,5 +28,5 @@ export const useFetch = ({ query }: QueryMovie) => {
     fetchData();
   }, [query]);
 
-  return { data, loading };
+  return { data, loading } as any;
 };
