@@ -7,7 +7,7 @@ import { FourthSection } from "./components/FourthSection"
 
 export default function Home() {
   return (
-  <div className="flex flex-col justify-start items-center min-h-screen min-w-screen">
+  <div className="flex flex-col justify-start items-center min-h-screen min-w-screen bg-custom-whiteish">
   <NavBar />
   <FirstSection />
   <SectionsOne ttitle="Most New" />

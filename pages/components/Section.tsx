@@ -25,11 +25,11 @@ export const Section : React.FC<titlePrincipal> = ({tittle}) => {
   } = data;
 
   return (
-    <section className=" bg-slate-900 p-2 flex flex-col justify-center items-center md:max-w-2xl gap-2 rounded-lg hover:cursor-pointer">
-      <h4 className="pr-2 pb-4 font-bold text-left uppercase text-xl">
+    <section className=" bg-custom-darkpurple p-2 flex flex-col justify-center items-center md:max-w-2xl gap-2 rounded-lg hover:cursor-pointer hover:p-4 transition-all duration-500 ease-out" id="mostpopular">
+      <h4 className="pr-2 pb-4 font-bold text-left uppercase text-xl text-custom-text">
         {tittle}
       </h4>
-      <div className="rounded-lg p-5 w-[450px] flex flex-col justify-center items-center gap-5">
+      <div className="rounded-lg p-5 w-[450px] flex flex-col justify-center items-center gap-5 ">
         <img src={Poster} alt={Title} className='mt-0 rounded-xl gap-2' />
         <h5 className="mb-2 text-xl font-bold leading-tight text-center py-2">
           {Title}

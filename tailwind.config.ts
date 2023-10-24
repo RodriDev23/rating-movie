@@ -8,7 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+          'custom-text': '#11120D'
+      },
       backgroundColor: {
+        'custom-skyblue': '#5C687F',
+        'custom-whitepurple': '#D6CDDB',
+        'custom-darkpurple': '#343144',
+        'custom-whiteish': '#F1F2ED',
         'custom-blue': '#060d17',
         'custom-purple': '#413b5f;',
         'custom-second-purple': '#696286;',
