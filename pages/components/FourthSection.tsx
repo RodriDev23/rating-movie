@@ -2,7 +2,7 @@ import React from 'react'
 import { useFetch } from './useFetch';
 
 export function FourthSection() {
-    const { data, loading } = useFetch({query : 'the-batman'});
+    const { data, loading } = useFetch({query : 'Scream-VI'});
 
     if (loading) {
         return <div className="text-lime-500 font-bold">Loading...</div>; // You can add a loading indicator if needed

@@ -24,13 +24,13 @@ function FullPageWithData() {
         <img src={data.Poster} alt="img-title" className="rounded-md" />
       </div>
       <div className="flex flex-col justify-start items-center gap-10">
-        <h2 className="text-left text-3xl font-bold text-custom-text">Description</h2>
-        <p className="text-left text-2xl text-custom-text">{data.Plot}</p>
+        <h2 className="text-center text-3xl font-bold text-custom-text">Description</h2>
+        <p className="text-center text-2xl text-custom-text w-[70%]">{data.Plot}</p>
       </div>
       <div className="flex flex-col justify-start items-center gap-10">
-        <h2 className="text-left text-3xl font-bold text-custom-text">Actors & Directors</h2>
-        <p className="text-left text-2xl text-custom-text">{data.Actors}</p>
-        <p className="text-left text-2xl text-custom-text">{data.Directors}</p>
+        <h2 className="text-center text-3xl font-bold text-custom-text">Actors & Directors</h2>
+        <p className="text-center text-2xl text-custom-text">{data.Actors}</p>
+        <p className="text-center text-2xl text-custom-text">{data.Directors}</p>
       </div>
 
       <div className="flex flex-col gap-10 justify-center items-center text-custom-text">

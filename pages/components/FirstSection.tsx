@@ -20,7 +20,7 @@ export function FirstSection() {
     return (
         <section className="flex flex-col md:flex-col md:justify-center md:items-center md:gap-10 items-center justify-center bg-custom-darkpurple p-5 rounded-lg mt-10 w-2/3" id="home">
             <div className="md:w-1/2 p-4 md:flex md:flex-col md:justify-center md:items-center md:gap-10">
-                <h1 className="text-3xl md:text-3xl text-white font-bold mb-4">
+                <h1 className="text-3xl md:text-3xl text-white font-bold mb-4 text-center">
                     Check the most new movies and get ready to have an unique experience
                 </h1>
     </div>
